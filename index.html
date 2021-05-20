@@ -30,12 +30,47 @@
 </head>
 
 <body>
+  <script>
+
+
+
+
+
+<!-- Load Facebook SDK for JavaScript -->
+
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+
+
+
+
+
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header">
+    <div id="fb-root"></div>
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="1473095146322924">
+    </div>
     <div class="d-flex flex-column">
 
       <div class="profile">
@@ -44,7 +79,7 @@
         <div class="social-links mt-3 text-center">
           <a href="https://twitter.com/shariff_Srv" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="https://www.facebook.com/sourabh.kashyap.3597" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/aspire_srv/ " target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.instagram.com/aspire_srv/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://secure.skype.com/portal/profile" target="_blank" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="https://www.linkedin.com/in/sourabh-kashyap-539924176/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
@@ -91,7 +126,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>UI/UX Designer &amp; Web Developer.</h3>
             <p class="font-italic">
-              
+
             </p>
             <p>
               I started learning jQuery to enhance my "web powers", but after a while, realizing that jQuery is built on top of JavaScript, I dropped it and started learning Vanilla JS, and when I felt that I understood what is going on under the hood, I picked ReactJS to help me on the long run on the front-end. I also added NodeJS (back-end) to my skills palette so I could provide Full-Stack JavaScript services. :)
@@ -136,11 +171,10 @@
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-            
-            <div class="progress">
-              <span class="skill">ReactJS <i class="val">70%<i></span>
+			<div class="progress">
+              <span class="skill">ReactJS <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -161,28 +195,20 @@
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-            
-            <div class="progress">
-              <span class="skill">Express.js <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
 
-            
-                
-                
-               <div class="progress">
-              <span class="skill">MongoDB <i class="val">80%<i></span>
-               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress">
+              <span class="skill">MongoDB <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-                
-         
-                
-                
-       
+			
+			<div class="progress">
+              <span class="skill">Express.js <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
 
           </div>
 
@@ -342,9 +368,9 @@
 
               <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/Freshy1.png" class="img-fluid" alt="">
+              <img src="assets/img/freshy1.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/Freshy1.png" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/freshy1.png" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -442,14 +468,14 @@ Send me over a message, and let's chat.</p>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-              
+
             </form>
           </div>
 
         </div>
 <h3>Sign-up to my <a href="https://secret-taiga-20380.herokuapp.com/" target="_blank">Newsletter !</a></h3>
       </div>
-      
+
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -484,6 +510,7 @@ Send me over a message, and let's chat.</p>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </body>
 
 </html>
